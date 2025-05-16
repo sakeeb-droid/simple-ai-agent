@@ -23,7 +23,7 @@ llm = ChatGoogleGenerativeAI(
 
 llm_with_tools = llm.bind_tools(toolset)
 
-sys_prompt_file = open("GAIA Agent\system_prompt.txt")
+sys_prompt_file = open("system_prompt.txt")
 sys_prompt = sys_prompt_file.read()
 
 class AgentState(TypedDict):
